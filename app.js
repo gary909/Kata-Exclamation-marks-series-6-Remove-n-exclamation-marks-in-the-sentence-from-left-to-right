@@ -1,7 +1,9 @@
 function remove(s, n) {
-    //coding and coding....
-
-
+    let myStr = s;
+    for (let i = 0; i < n; i++) {
+        myStr = myStr.replace('!', '')
+    }
+    return myStr;
 }
 
 console.log(remove("Hi!", 1)); //  "Hi"
